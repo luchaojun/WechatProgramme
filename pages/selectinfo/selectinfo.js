@@ -9,9 +9,9 @@ Page({
   select_btn: function(){
     var lds = this;
     wx.request({
-      url: 'http://192.168.1.100:8080/getUserById',
+      url: 'http://172.16.7.61:8080/getProductProgressBySaleOrder',
       data: {
-        id: this.data.inputValue
+        saleOrder: this.data.inputValue
       },
       method: "GET",
       success(res){

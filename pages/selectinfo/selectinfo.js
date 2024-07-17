@@ -1,7 +1,7 @@
 Page({
   data: {
     inputValue:'' ,
-    dataItems:''
+    allItems:''
   },
   bindkeyInput: function(e){
     this.setData({inputValue: e.detail.value});
@@ -15,8 +15,19 @@ Page({
       },
       method: "GET",
       success(res){
-        lds.setData({dataItems: res.data});
-        console.log(lds.data.dataItems)
+        lds.setData({allItems: res.data});
+        console.log(lds.data.dataItems);
+      }
+    })
+  },
+  select_all: function(){
+    var lds = this;
+    wx.request({
+      url: 'http://172.16.7.61:8080/getAllProductProgress',
+      method: "GET",
+      success(res){
+        lds.setData({allItems: res.data});
+        console.log(lds.data.allItems);
       }
     })
   }

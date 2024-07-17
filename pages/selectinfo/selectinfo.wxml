@@ -1,0 +1,3 @@
+<input class="inputNumber" placeholder="请输入要查询的单号" bindinput="bindkeyInput" type="text"/>
+<button type="warn" class="number-select" value="{{inputValue}}" bind:tap="select_btn">查询</button>
+<text class="showContent">{{dataItems.id}}     {{dataItems.username}}     {{dataItems.password}}</text>

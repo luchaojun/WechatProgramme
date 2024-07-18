@@ -1,7 +1,8 @@
 Page({
   data: {
-    inputValue:'' ,
-    allItems:''
+    inputValue: '' ,
+    viewHidden: 'true',
+    allItems: ''
   },
   bindkeyInput: function(e){
     this.setData({inputValue: e.detail.value});
@@ -15,8 +16,11 @@ Page({
       },
       method: "GET",
       success(res){
-        lds.setData({allItems: res.data});
-        console.log(lds.data.dataItems);
+        if (res.data.length > 0){
+          lds.setData({viewHidden: 'true'});
+          lds.setData({allItems: res.data});
+          console.log(lds.data.dataItems);
+        }
       }
     })
   },

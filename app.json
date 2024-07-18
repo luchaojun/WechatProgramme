@@ -7,23 +7,29 @@
     "pages/logs/logs"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Kapok订单查询系统",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Kapok查询系统",
+    "navigationBarBackgroundColor": "#00BFFF"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/selectinfo/selectinfo",
-        "text": "订单查询"
+        "text": "订单查询",
+        "iconPath": "pages/img/activity.png",
+        "selectedIconPath": "pages/img/activity_fill.png"
       },
       {
         "pagePath": "pages/selectinfo2/selectinfo2",
-        "text": "料号查询"
+        "text": "料号查询",
+        "iconPath": "pages/img/addpeople.png",
+        "selectedIconPath": "pages/img/addpeople_fill.png"
       },
       {
         "pagePath": "pages/selectinfo3/selectinfo3",
-        "text": "表单查询"
+        "text": "表单查询",
+        "iconPath": "pages/img/group.png",
+        "selectedIconPath": "pages/img/group_fill.png"
       }
     ]
   },

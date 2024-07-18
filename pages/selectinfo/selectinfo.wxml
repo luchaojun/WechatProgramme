@@ -1,21 +1,26 @@
-<input class="inputNumber" placeholder="请输入要查询的订单号" bindinput="bindkeyInput" type="text"/>
-<button type="warn" class="number-select" value="{{inputValue}}" bind:tap="select_btn">查询</button>
-<button type="warn" class="select-all" value="{{inputValue}}" bind:tap="select_all">展示所有信息</button>
-<view class="table">
-    <view class="tr">
-        <view class="th">customer_no</view>
-        <view class="th">customer_name</view>
-        <view class="th">sale_order</view>
-        <view class="th">mono</view>
-        <view class="th">part_no</view>
-        <view class="th">order_quantity</view>
-    </view>
-    <view class="tr" wx:for="{{allItems}}" wx:for-item="item">
-        <view class="td">{{item.customer_no}}</view>
-        <view class="td">{{item.customer_nane}}</view>
-        <view class="td">{{item.sale_order}}</view>
-        <view class="td">{{item.mono}}</view>
-        <view class="td">{{item.part_no}}</view>
-        <view class="td">{{item.order_quantity}}</view>
-    </view>
+<view style="background-color: #DCDCDC; height: 1000px;">
+  <image src="../images/kapok.jpg" style="width:400px;height:150px;"></image>
+  <view style="text-align: center; width: 100%; margin-top: 100px;font-weight: 1000;">欢迎使用凯博订单查询服务</view>
+  <input class="inputNumber" placeholder="请输入要查询的订单号" bindinput="bindkeyInput" type="text"/>
+  <button type="warn" class="number-select" value="{{inputValue}}" bind:tap="select_btn">查询</button>
+  <!-- <button type="warn" class="select-all" value="{{inputValue}}" bind:tap="select_all">展示所有信息</button> -->
+  <view class="table" hidden="{{viewHidden}}">
+      <view class="tr">
+          <view class="th">customer_no</view>
+          <view class="th">customer_name</view>
+          <view class="th">sale_order</view>
+          <view class="th">mono</view>
+          <view class="th">part_no</view>
+          <view class="th">order_quantity</view>
+      </view>
+      <view class="tr" wx:for="{{allItems}}" wx:for-item="item">
+          <view class="td">{{item.customer_no}}</view>
+          <view class="td">{{item.customer_nane}}</view>
+          <view class="td">{{item.sale_order}}</view>
+          <view class="td">{{item.mono}}</view>
+          <view class="td">{{item.part_no}}</view>
+          <view class="td">{{item.order_quantity}}</view>
+      </view>
+  </view>
 </view>
+

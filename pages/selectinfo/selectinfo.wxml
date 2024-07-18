@@ -1,6 +1,6 @@
 <view style="background-color: #DCDCDC; height: 1000px;">
-  <image src="../images/kapok.jpg" style="width:400px;height:150px;"></image>
-  <view style="text-align: center; width: 100%; margin-top: 100px;font-weight: 1000;">欢迎使用凯博订单查询服务</view>
+  <image src="../images/kapok.jpg"></image>
+  <view class="welcome">欢迎使用凯博订单查询服务</view>
   <input class="inputNumber" placeholder="请输入要查询的订单号" bindinput="bindkeyInput" type="text"/>
   <button type="warn" class="number-select" value="{{inputValue}}" bind:tap="select_btn">查询</button>
   <!-- <button type="warn" class="select-all" value="{{inputValue}}" bind:tap="select_all">展示所有信息</button> -->

@@ -1,3 +1,15 @@
+image{
+  width:400px;
+  height:150px;
+}
+
+.welcome{
+  text-align: center;
+   width: 100%; 
+   margin-top: 100px;
+   font-weight: 1000;
+}
+
 button{
   margin-top: 20px;
 }

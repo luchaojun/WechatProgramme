@@ -1,0 +1,45 @@
+button{
+  margin-top: 20px;
+}
+
+.inputNumber{
+  margin-left: 30px;
+  width: 80%;
+  height: 30px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.showContent{
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.table{
+    border: 1px solid #CCC;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tr{
+    border: 1px solid #CCC;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.th{
+    font-weight: 900;
+    background: #e4e28a;
+    font-size: 8px;
+    color: #00FF;
+}
+
+.th,.td{
+    border: 1px solid #CCC;
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+}

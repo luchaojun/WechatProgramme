@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/selectinfo/selectinfo",
+    "pages/selectinfo2/selectinfo2",
+    "pages/selectinfo3/selectinfo3",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -8,6 +10,22 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Kapok订单查询系统",
     "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/selectinfo/selectinfo",
+        "text": "订单查询"
+      },
+      {
+        "pagePath": "pages/selectinfo2/selectinfo2",
+        "text": "料号查询"
+      },
+      {
+        "pagePath": "pages/selectinfo3/selectinfo3",
+        "text": "表单查询"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",
